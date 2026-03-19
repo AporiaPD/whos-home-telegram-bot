@@ -11,12 +11,6 @@ dp = Dispatcher()
 
 async def main():
 
-    # Debug
-    print("Bot started!")
-
-    me = bot.get_me()
-    print(me)
-
     # Routers
     dp.include_router(user_router)
     dp.include_router(admin_router)
